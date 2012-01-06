@@ -1,0 +1,250 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		24D8CF9114B7648200AE31C1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24D8CF9014B7648200AE31C1 /* Foundation.framework */; };
+		24D8CFA314B764EA00AE31C1 /* cdecode.c in Sources */ = {isa = PBXBuildFile; fileRef = 24D8CF9D14B764EA00AE31C1 /* cdecode.c */; };
+		24D8CFA414B764EA00AE31C1 /* cdecode.h in Headers */ = {isa = PBXBuildFile; fileRef = 24D8CF9E14B764EA00AE31C1 /* cdecode.h */; };
+		24D8CFA514B764EA00AE31C1 /* cencode.c in Sources */ = {isa = PBXBuildFile; fileRef = 24D8CF9F14B764EA00AE31C1 /* cencode.c */; };
+		24D8CFA614B764EA00AE31C1 /* cencode.h in Headers */ = {isa = PBXBuildFile; fileRef = 24D8CFA014B764EA00AE31C1 /* cencode.h */; };
+		24D8CFA714B764EA00AE31C1 /* NSData+Base64.h in Headers */ = {isa = PBXBuildFile; fileRef = 24D8CFA114B764EA00AE31C1 /* NSData+Base64.h */; };
+		24D8CFA814B764EA00AE31C1 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D8CFA214B764EA00AE31C1 /* NSData+Base64.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		24D8CF8D14B7648200AE31C1 /* liblibb64-iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "liblibb64-iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		24D8CF9014B7648200AE31C1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		24D8CF9414B7648200AE31C1 /* libb64-iOS-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "libb64-iOS-Prefix.pch"; sourceTree = "<group>"; };
+		24D8CF9D14B764EA00AE31C1 /* cdecode.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cdecode.c; sourceTree = "<group>"; };
+		24D8CF9E14B764EA00AE31C1 /* cdecode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cdecode.h; sourceTree = "<group>"; };
+		24D8CF9F14B764EA00AE31C1 /* cencode.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cencode.c; sourceTree = "<group>"; };
+		24D8CFA014B764EA00AE31C1 /* cencode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cencode.h; sourceTree = "<group>"; };
+		24D8CFA114B764EA00AE31C1 /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
+		24D8CFA214B764EA00AE31C1 /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		24D8CF8A14B7648200AE31C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24D8CF9114B7648200AE31C1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		24D8CF8214B7648200AE31C1 = {
+			isa = PBXGroup;
+			children = (
+				24D8CF9214B7648200AE31C1 /* libb64-iOS */,
+				24D8CF8F14B7648200AE31C1 /* Frameworks */,
+				24D8CF8E14B7648200AE31C1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		24D8CF8E14B7648200AE31C1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				24D8CF8D14B7648200AE31C1 /* liblibb64-iOS.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		24D8CF8F14B7648200AE31C1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				24D8CF9014B7648200AE31C1 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		24D8CF9214B7648200AE31C1 /* libb64-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				24D8CF9D14B764EA00AE31C1 /* cdecode.c */,
+				24D8CF9E14B764EA00AE31C1 /* cdecode.h */,
+				24D8CF9F14B764EA00AE31C1 /* cencode.c */,
+				24D8CFA014B764EA00AE31C1 /* cencode.h */,
+				24D8CFA114B764EA00AE31C1 /* NSData+Base64.h */,
+				24D8CFA214B764EA00AE31C1 /* NSData+Base64.m */,
+				24D8CF9314B7648200AE31C1 /* Supporting Files */,
+			);
+			path = "libb64-iOS";
+			sourceTree = "<group>";
+		};
+		24D8CF9314B7648200AE31C1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				24D8CF9414B7648200AE31C1 /* libb64-iOS-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		24D8CF8B14B7648200AE31C1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24D8CFA414B764EA00AE31C1 /* cdecode.h in Headers */,
+				24D8CFA614B764EA00AE31C1 /* cencode.h in Headers */,
+				24D8CFA714B764EA00AE31C1 /* NSData+Base64.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		24D8CF8C14B7648200AE31C1 /* libb64-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24D8CF9A14B7648200AE31C1 /* Build configuration list for PBXNativeTarget "libb64-iOS" */;
+			buildPhases = (
+				24D8CF8914B7648200AE31C1 /* Sources */,
+				24D8CF8A14B7648200AE31C1 /* Frameworks */,
+				24D8CF8B14B7648200AE31C1 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "libb64-iOS";
+			productName = "libb64-iOS";
+			productReference = 24D8CF8D14B7648200AE31C1 /* liblibb64-iOS.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		24D8CF8414B7648200AE31C1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = JOT;
+			};
+			buildConfigurationList = 24D8CF8714B7648200AE31C1 /* Build configuration list for PBXProject "libb64-iOS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 24D8CF8214B7648200AE31C1;
+			productRefGroup = 24D8CF8E14B7648200AE31C1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				24D8CF8C14B7648200AE31C1 /* libb64-iOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		24D8CF8914B7648200AE31C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24D8CFA314B764EA00AE31C1 /* cdecode.c in Sources */,
+				24D8CFA514B764EA00AE31C1 /* cencode.c in Sources */,
+				24D8CFA814B764EA00AE31C1 /* NSData+Base64.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		24D8CF9814B7648200AE31C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		24D8CF9914B7648200AE31C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		24D8CF9B14B7648200AE31C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/libb64_iOS.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "libb64-iOS/libb64-iOS-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		24D8CF9C14B7648200AE31C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/libb64_iOS.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "libb64-iOS/libb64-iOS-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		24D8CF8714B7648200AE31C1 /* Build configuration list for PBXProject "libb64-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24D8CF9814B7648200AE31C1 /* Debug */,
+				24D8CF9914B7648200AE31C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		24D8CF9A14B7648200AE31C1 /* Build configuration list for PBXNativeTarget "libb64-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24D8CF9B14B7648200AE31C1 /* Debug */,
+				24D8CF9C14B7648200AE31C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 24D8CF8414B7648200AE31C1 /* Project object */;
+}

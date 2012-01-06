@@ -17,9 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		24D8CF8D14B7648200AE31C1 /* liblibb64-iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "liblibb64-iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		24D8CF8D14B7648200AE31C1 /* libb64.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libb64.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		24D8CF9014B7648200AE31C1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		24D8CF9414B7648200AE31C1 /* libb64-iOS-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "libb64-iOS-Prefix.pch"; sourceTree = "<group>"; };
+		24D8CF9414B7648200AE31C1 /* b64-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "b64-Prefix.pch"; sourceTree = "<group>"; };
 		24D8CF9D14B764EA00AE31C1 /* cdecode.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cdecode.c; sourceTree = "<group>"; };
 		24D8CF9E14B764EA00AE31C1 /* cdecode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cdecode.h; sourceTree = "<group>"; };
 		24D8CF9F14B764EA00AE31C1 /* cencode.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cencode.c; sourceTree = "<group>"; };
@@ -43,7 +43,7 @@
 		24D8CF8214B7648200AE31C1 = {
 			isa = PBXGroup;
 			children = (
-				24D8CF9214B7648200AE31C1 /* libb64-iOS */,
+				24D8CF9214B7648200AE31C1 /* b64 */,
 				24D8CF8F14B7648200AE31C1 /* Frameworks */,
 				24D8CF8E14B7648200AE31C1 /* Products */,
 			);
@@ -52,7 +52,7 @@
 		24D8CF8E14B7648200AE31C1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				24D8CF8D14B7648200AE31C1 /* liblibb64-iOS.a */,
+				24D8CF8D14B7648200AE31C1 /* libb64.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -65,7 +65,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		24D8CF9214B7648200AE31C1 /* libb64-iOS */ = {
+		24D8CF9214B7648200AE31C1 /* b64 */ = {
 			isa = PBXGroup;
 			children = (
 				24D8CF9D14B764EA00AE31C1 /* cdecode.c */,
@@ -76,13 +76,14 @@
 				24D8CFA214B764EA00AE31C1 /* NSData+Base64.m */,
 				24D8CF9314B7648200AE31C1 /* Supporting Files */,
 			);
+			name = b64;
 			path = "libb64-iOS";
 			sourceTree = "<group>";
 		};
 		24D8CF9314B7648200AE31C1 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				24D8CF9414B7648200AE31C1 /* libb64-iOS-Prefix.pch */,
+				24D8CF9414B7648200AE31C1 /* b64-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -103,9 +104,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		24D8CF8C14B7648200AE31C1 /* libb64-iOS */ = {
+		24D8CF8C14B7648200AE31C1 /* b64 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 24D8CF9A14B7648200AE31C1 /* Build configuration list for PBXNativeTarget "libb64-iOS" */;
+			buildConfigurationList = 24D8CF9A14B7648200AE31C1 /* Build configuration list for PBXNativeTarget "b64" */;
 			buildPhases = (
 				24D8CF8914B7648200AE31C1 /* Sources */,
 				24D8CF8A14B7648200AE31C1 /* Frameworks */,
@@ -115,9 +116,9 @@
 			);
 			dependencies = (
 			);
-			name = "libb64-iOS";
+			name = b64;
 			productName = "libb64-iOS";
-			productReference = 24D8CF8D14B7648200AE31C1 /* liblibb64-iOS.a */;
+			productReference = 24D8CF8D14B7648200AE31C1 /* libb64.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -129,7 +130,7 @@
 				LastUpgradeCheck = 0420;
 				ORGANIZATIONNAME = JOT;
 			};
-			buildConfigurationList = 24D8CF8714B7648200AE31C1 /* Build configuration list for PBXProject "libb64-iOS" */;
+			buildConfigurationList = 24D8CF8714B7648200AE31C1 /* Build configuration list for PBXProject "b64" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -141,7 +142,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				24D8CF8C14B7648200AE31C1 /* libb64-iOS */,
+				24D8CF8C14B7648200AE31C1 /* b64 */,
 			);
 		};
 /* End PBXProject section */
@@ -205,7 +206,7 @@
 			buildSettings = {
 				DSTROOT = /tmp/libb64_iOS.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "libb64-iOS/libb64-iOS-Prefix.pch";
+				GCC_PREFIX_HEADER = "libb64-iOS/b64-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -217,7 +218,7 @@
 			buildSettings = {
 				DSTROOT = /tmp/libb64_iOS.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "libb64-iOS/libb64-iOS-Prefix.pch";
+				GCC_PREFIX_HEADER = "libb64-iOS/b64-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -227,7 +228,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		24D8CF8714B7648200AE31C1 /* Build configuration list for PBXProject "libb64-iOS" */ = {
+		24D8CF8714B7648200AE31C1 /* Build configuration list for PBXProject "b64" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				24D8CF9814B7648200AE31C1 /* Debug */,
@@ -236,13 +237,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		24D8CF9A14B7648200AE31C1 /* Build configuration list for PBXNativeTarget "libb64-iOS" */ = {
+		24D8CF9A14B7648200AE31C1 /* Build configuration list for PBXNativeTarget "b64" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				24D8CF9B14B7648200AE31C1 /* Debug */,
 				24D8CF9C14B7648200AE31C1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

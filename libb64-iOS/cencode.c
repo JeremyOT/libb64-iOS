@@ -6,8 +6,25 @@ For details, see http://sourceforge.net/projects/libb64
 */
 
 #include "cencode.h"
+#include "stdlib.h"
 
 const int CHARS_PER_LINE = 72;
+int base64_encode(const void* plaintext_in, int length_in, void** code_out)
+{
+	size_t _buffersize = ((length_in / 3) + ((length_in % 3) ? 1 : 0)) * 4;
+	_buffersize += (_buffersize / CHARS_PER_LINE);
+	_buffersize += 1;
+
+	*code_out = malloc(_buffersize);
+
+	base64_encodestate state_in;
+	base64_init_encodestate(&state_in);
+
+	int length_out = base64_encode_block(plaintext_in, length_in, *code_out, &state_in);
+	base64_encode_blockend(*code_out + length_out, &state_in);
+
+	return _buffersize;
+}
 
 void base64_init_encodestate(base64_encodestate* state_in)
 {

@@ -28,4 +28,6 @@ int base64_encode_block(const char* plaintext_in, int length_in, char* code_out,
 
 int base64_encode_blockend(char* code_out, base64_encodestate* state_in);
 
+int base64_encode(const void* plaintext_in, int length_in, void** code_out);
+
 #endif /* BASE64_CENCODE_H */

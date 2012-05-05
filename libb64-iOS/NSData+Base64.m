@@ -14,7 +14,9 @@
 -(NSString*)stringByBase64Encoding {
     base64_encodestate state;
     base64_init_encodestate(&state);
-    int outsize = (int)(ceil([self length] / 3.0) * 4.0);
+    int outsize = (([self length] / 3) + (([self length] % 3) ? 1 : 0)) * 4;
+	outsize += (outsize / CHARS_PER_LINE);
+	outsize += 1;
     char output[outsize];
     int encoded = base64_encode_block([self bytes], [self length], output, &state);
     base64_encode_blockend(output + encoded, &state);

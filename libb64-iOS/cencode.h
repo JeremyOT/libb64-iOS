@@ -7,6 +7,7 @@ For details, see http://sourceforge.net/projects/libb64
 
 #ifndef BASE64_CENCODE_H
 #define BASE64_CENCODE_H
+#define CHARS_PER_LINE 64
 
 typedef enum
 {

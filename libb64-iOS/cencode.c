@@ -8,7 +8,6 @@ For details, see http://sourceforge.net/projects/libb64
 #include "cencode.h"
 #include "stdlib.h"
 
-const int CHARS_PER_LINE = 72;
 int base64_encode(const void* plaintext_in, int length_in, void** code_out)
 {
 	size_t _buffersize = ((length_in / 3) + ((length_in % 3) ? 1 : 0)) * 4;

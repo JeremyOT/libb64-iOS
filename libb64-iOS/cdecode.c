@@ -6,6 +6,21 @@ For details, see http://sourceforge.net/projects/libb64
 */
 
 #include "cdecode.h"
+#include "stdlib.h"
+
+int base64_decode(const void* plaintext_in, int length_in, void** code_out)
+{
+	size_t _buffersize = ((length_in + 3) / 4) * 3;
+
+	*code_out = malloc(_buffersize);
+
+	base64_decodestate state_in;
+	base64_init_decodestate(&state_in);
+
+	int length_out = base64_decode_block(plaintext_in, length_in, *code_out, &state_in);
+
+	return length_out;
+}
 
 int base64_decode_value(char value_in)
 {

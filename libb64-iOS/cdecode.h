@@ -25,4 +25,6 @@ int base64_decode_value(char value_in);
 
 int base64_decode_block(const char* code_in, const int length_in, char* plaintext_out, base64_decodestate* state_in);
 
+int base64_decode(const void* plaintext_in, int length_in, void** code_out);
+
 #endif /* BASE64_CDECODE_H */

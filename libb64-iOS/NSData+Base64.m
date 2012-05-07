@@ -14,11 +14,13 @@
 -(NSString*)stringByBase64Encoding {
     base64_encodestate state;
     base64_init_encodestate(&state);
-    int outsize = (int)(ceil([self length] / 3.0) * 4.0);
+    int outsize = (([self length] / 3) + (([self length] % 3) ? 1 : 0)) * 4;
+	outsize += (outsize / CHARS_PER_LINE);
+	outsize += 1;
     char output[outsize];
     int encoded = base64_encode_block([self bytes], [self length], output, &state);
     base64_encode_blockend(output + encoded, &state);
-    return [[[NSString alloc] initWithData:[NSData dataWithBytes:output length:outsize] encoding:NSASCIIStringEncoding] autorelease];
+    return [[[NSString alloc] initWithBytes:output length:outsize encoding:NSASCIIStringEncoding] autorelease];
 }
 
 +(NSData*)dataByBase64DecodingString:(NSString*)base64String {
@@ -26,7 +28,7 @@
     base64_init_decodestate(&state);
     char output[[base64String length] / 4 * 3];
     int decoded = base64_decode_block([base64String cStringUsingEncoding:NSASCIIStringEncoding], [base64String length], output, &state);
-    return [NSData dataWithBytes:output length:decoded];
+    return [[[NSData alloc] initWithBytes:output length:decoded] autorelease];
 }
 
 @end

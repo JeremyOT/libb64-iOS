@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name         = "libb64-iOS"
   s.version      = "0.0.1"
-  s.summary      = "A lightweight Objective-C wrapper for libb64."
+  s.summary      = "A lightweight Objective-C wrapper around libb64 for easy base 64 encoding and decoding on iOS."
   s.homepage     = "https://github.com/JeremyOT/libb64-iOS"
 
   s.license      = { :type => 'Open source' , :text => 'Open source'}

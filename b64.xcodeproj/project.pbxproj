@@ -12,7 +12,7 @@
 		24D8CFA414B764EA00AE31C1 /* cdecode.h in Headers */ = {isa = PBXBuildFile; fileRef = 24D8CF9E14B764EA00AE31C1 /* cdecode.h */; };
 		24D8CFA514B764EA00AE31C1 /* cencode.c in Sources */ = {isa = PBXBuildFile; fileRef = 24D8CF9F14B764EA00AE31C1 /* cencode.c */; };
 		24D8CFA614B764EA00AE31C1 /* cencode.h in Headers */ = {isa = PBXBuildFile; fileRef = 24D8CFA014B764EA00AE31C1 /* cencode.h */; };
-		24D8CFA714B764EA00AE31C1 /* NSData+Base64.h in Headers */ = {isa = PBXBuildFile; fileRef = 24D8CFA114B764EA00AE31C1 /* NSData+Base64.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		24D8CFA714B764EA00AE31C1 /* NSData+Base64.h in Headers */ = {isa = PBXBuildFile; fileRef = 24D8CFA114B764EA00AE31C1 /* NSData+Base64.h */; settings = {ATTRIBUTES = (); }; };
 		24D8CFA814B764EA00AE31C1 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D8CFA214B764EA00AE31C1 /* NSData+Base64.m */; };
 /* End PBXBuildFile section */
 
@@ -95,9 +95,9 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				24D8CFA714B764EA00AE31C1 /* NSData+Base64.h in Headers */,
 				24D8CFA414B764EA00AE31C1 /* cdecode.h in Headers */,
 				24D8CFA614B764EA00AE31C1 /* cencode.h in Headers */,
+				24D8CFA714B764EA00AE31C1 /* NSData+Base64.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
